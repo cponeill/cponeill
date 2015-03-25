@@ -2,9 +2,9 @@ import csv
 
 def get_data():
 	data = csv.DictReader(open("api.csv"))
-	results = {"Work History": []}
+	results = {"WorkHistory": []}
 	for line in data:
-		results["Work History"].append({
+		results["WorkHistory"].append({
 			"Company": line["Company"],
 			"Position": line["Position"],
 			"Date": line["Date"],
