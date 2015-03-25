@@ -1,0 +1,61 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 75%;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.left {
+  text-align: right;
+  float: left;
+  width: 50%;
+}
+
+.right {
+  text-align: left;
+  float: right;
+  width: 50%;
+}
+
+.networks {
+  overflow: hidden;
+}
+
+p {
+  color: #888;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  margin: 0;
+}
+
+.contact {
+  color: #ccc;
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 10%;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #3790FF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
