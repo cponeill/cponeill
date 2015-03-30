@@ -20,7 +20,7 @@ def projects():
 def api():
 	return render_template("api.html")
 
-@app.route("/api/data")
+@app.route("/api/data.json")
 def api_return():
 	return jsonify(get_data())
 
