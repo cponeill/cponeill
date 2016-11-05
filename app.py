@@ -10,7 +10,7 @@ def hello():
 
 @app.route("/focus")
 def about():
-	return render_template("about.html")
+	return render_template("focus.html")
 	
 @app.route("/skills")
 def skills():
