@@ -19,6 +19,14 @@ def skills():
 @app.route("/projects")
 def projects():
 	return render_template("projects.html")
+	
+@app.route("/projects/marketing")
+def marketing():
+	return render_template("marketing.html")
+
+@app.route("/projects/development")
+def development():
+	return render_template("development.html")
 
 @app.route("/api")
 def api():
