@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/cponeill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.cponeill.com
+  * I am cponeill (https://keybase.io/cponeill) on keybase.
+  * I have a public key with fingerprint CE94 B514 704B 2502 1824  3FD0 11B9 8093 1E34 15E7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010158b6feec8064ec50b508ff2c1bbb9c48b6b6e3edb77b5c80d66c53208f89ca280a",
+            "fingerprint": "ce94b514704b250218243fd011b980931e3415e7",
+            "host": "keybase.io",
+            "key_id": "11b980931e3415e7",
+            "kid": "010158b6feec8064ec50b508ff2c1bbb9c48b6b6e3edb77b5c80d66c53208f89ca280a",
+            "uid": "da371506ced1b3588ba9144c52c24900",
+            "username": "cponeill"
+        },
+        "service": {
+            "hostname": "www.cponeill.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1485122408,
+    "expire_in": 157680000,
+    "prev": "06e82bf347cfa619dcf54f3ea42186531dc662c07a5bb33cc76b5b87443545c6",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJbSBVBGMePnSwvVGIhhBWHpYfMCzO7M3s5PUQkZhSVUdkNjzuzs8dN
+z+7xXLxggmCGJN2tyC6UGkR0eSkoKihvZVFRFCKBhQlFD2WZEFbUrNhbj83LMN/3
++//n+76ZnlleT0pCa5FSem5B22jC4/ttcc/WpuyyOoE4Rq3grxPK2eTGKgwWjQXK
+LUPwCwACiFUim4xRFciIUQwIBqppihQSQjSKeJbITGIGURSCOWXIMsWSyCFVo7qo
+Al3IEUzLDrJIOGLZMW5LmYYIhkgBiIgYiFAVkWQaAEKiqUCTIJMQxEzhwjIn6ip4
+cUSPsjzL4TF+CEyW9w/+P9cdn7QzdEmBGMiUGZBIWFWJrkGEKBapiDQAXDDKIrYe
+Ym53YcdmVkWFUJ8j8GiVRZk7WLeTKaK6ujrvL5VHnRDXhyNOzKFOBc+WxWJhvyuO
+1YYnaUYCUz4BYtkGHyUXVLFI1HJswQ85SWOWawyRiqEoIqDmCKwmbEVYwHIJrMgq
+4Mu9hlW585GZKhJTQgo1dRlqBjUxMiWmI/4WMpagQWVZpEDRMSGSRKkiE0xUBSEJ
+I0xlwe2s0nYEv8zL1IPcMmoFbT0WjzChvuvezumehBTPjMRp7hfzpCSn/f14857N
+/JWJhxZtOz1+tW+Fb7R3TdqB5sKDji99eOm9YltbOfbCt/lKaEXNfN+GlqSuhyNd
+WdE3Q4nn4iPJND/ekOvteI1mf2m/3BmUDs9dWxCc82SiSCtJu3FgSeul861946Em
+JT97+bXaQ3fPDwwN3jx4c8Lene/pptffnQhtXL/DOzzxtqG/al/4c0ZGb93qM7f6
+L32BJ8kPcCapcGUI18TTyz9k/yx2ju859juvOTe9pXtN/8tjqz6N3X5/2ZPT87Ux
+c/T2q+ePNqVlHb1z5NO6bxsffPy+P9fnTR2IdgodJU8rzw6On2ooLUlPHV53ceL1
+ri0FF97e31A41r63Mbx4+8Jl3u293+r+AO+SQuk=
+=nvgB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cponeill
+
+==================================================================
