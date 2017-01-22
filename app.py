@@ -35,6 +35,10 @@ def api():
 @app.route("/api/data.json")
 def api_return():
 	return jsonify(get_data())
+	
+@app.route('/keybase.txt')
+def keybase():
+	return render_template("keybase.txt")
 
 if __name__ == "__main__ ":
 	app.run()
