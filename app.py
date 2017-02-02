@@ -55,5 +55,6 @@ def keybase():
     return render_template("keybase.txt")
 
 
+# Running the server on port 5000.
 if __name__ == "__main__ ":
     app.run()
