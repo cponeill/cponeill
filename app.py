@@ -1,9 +1,12 @@
+#! /usr/bin/env python2
+# Importing developer libraries
 from flask import Flask, render_template, jsonify
 import os
 from scraper import get_data
 
 app = Flask(__name__)
 
+# The following functions all render to their corresponding HTML page and file.
 @app.route("/")
 def hello():
 	return render_template("index.html")
