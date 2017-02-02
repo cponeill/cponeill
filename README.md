@@ -1,2 +1,2 @@
 # cponeill
-Moved my homepage from a Node.js over to Flask. Added an API that pulls my work history data.
+This is the Flask framework used to create http://www.cponeill.com. The app server uses Python 2 and the design is supposed to be as minimal as possible. 
