@@ -1,9 +1,8 @@
 #! /usr/bin/env python2
-# Importing developer libraries
-# TO-DO: Update server code to conform to Pep8 standards.
 from flask import Flask, render_template, jsonify
-import os
 from scraper import get_data
+
+import os
 
 
 app = Flask(__name__)
