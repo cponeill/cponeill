@@ -14,7 +14,7 @@ def hello():
     return render_template("index.html")
 
 
-@app.route("/focus")
+@app.route("/about")
 def about():
     return render_template("focus.html")
 
