@@ -45,8 +45,9 @@ h1 {
 
 p {
   color: #888;
-  font-family: 'Amatic SC', cursive;
-  font-size: 2em;
+  font: 2em, 'Amatic SC', cursive;
+  /*font-family: 'Amatic SC', cursive;
+  font-size: 2em;*/
   margin: 0;
 }
 
