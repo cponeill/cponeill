@@ -2,6 +2,15 @@
   <!--<meta http-equiv="Content-Security-Policy" content="img-src *; script-src 'self' https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval' 'nonce-vAHFJ9xsxeuwuzlbsDuoqgVZ09GnBApiU22cIg9L2PGDUOPVzWNmo7CvaikJLFEN';" >-->
   <meta http-equiv="Content-Security-Policy" script-src 'self' 'nonce-$RANDOM';>
   <meta name="referrer" content="origin" />
+  <script>
+    function genNonce() {
+      const charset = '0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._~';
+      const result = [];
+      window.crypto.getRandomValues(new Uint8Array(32)).forEach(c =>
+        result.push(charset[c % charset.length]));
+      return result.join('');
+    }
+  </script>
   <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
   <meta charset="utf-8">
   <meta name="description" content="Casey O'Neill is a driven professional growth engineer and marketer">
@@ -14,7 +23,7 @@
   <!-- <link href="normalize.css" media="all" rel="stylesheet"> -->
   <!-- <link href="master.css" media="all" rel="stylesheet"> -->
       <!-- Google Analytics Code Start -->
-      <script nonce="$RANDOM">
+      <script nonce="genNonce()">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
