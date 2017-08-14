@@ -56,6 +56,7 @@ def keybase():
 @app.after_request
 def apply_caching(response):
     response.headers['Content-Security-Policy'] = "default-src 'self'"
+    response.headers['Referrer-Policy'] = 'origin'
     return response
 
 
