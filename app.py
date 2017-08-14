@@ -1,5 +1,5 @@
 #! /usr/bin/env python2
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, Response
 from scraper import get_data
 
 import os
@@ -11,7 +11,11 @@ app = Flask(__name__)
 # The following functions all render to their corresponding HTML page and file.
 @app.route("/")
 def hello():
-    return render_template("index.html")
+    #return render_template("index.html")
+    resp = Response("index.html")
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    resp.headers['Content-Security-Policy'] = "default-src 'self'"
+    return resp
 
 
 @app.route("/focus")
