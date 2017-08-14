@@ -53,11 +53,7 @@ def api_return():
 def keybase():
     return render_template("keybase.txt")
     
-@app.before_request
-def apply_headers(response):
-    response.headers['Referrer-Policy'] = 'no-referrer-when-downgrade'
-    return response
-    
+
 @app.after_request
 def apply_caching(response):
     response.headers['Content-Security-Policy'] = "default-src 'self'"
