@@ -11,11 +11,7 @@ app = Flask(__name__)
 # The following functions all render to their corresponding HTML page and file.
 @app.route("/")
 def hello():
-    #return render_template("index.html")
-    resp = Response("index.html")
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['Content-Security-Policy'] = "default-src 'self'"
-    return resp
+    return render_template("index.html")
 
 
 @app.route("/focus")
@@ -56,6 +52,11 @@ def api_return():
 @app.route('/keybase.txt')
 def keybase():
     return render_template("keybase.txt")
+    
+@app.after_request
+def apply_caching(response):
+    response.headers['Content-Security-Policy'] = "default-src 'self'"
+    return response
 
 
 # Running the server on port 5000.
