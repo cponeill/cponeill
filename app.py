@@ -58,7 +58,7 @@ def keybase():
 def apply_caching(response):
     #response.headers['Content-Security-Policy-Report-Only'] = "img-src self; script-src https://www.cponeill.com https://www.google-analytics.com/analytics.js"
     # Testing CSP headers in Report Only
-    response.headers['Content-Security-Policy-Report-Only'] = 'default-src self; img-src *; script-src *'
+    response.headers['Content-Security-Policy-Report-Only'] = 'default-src self; img-src *; script-src unsafe-inline'
     response.headers['Referrer-Policy'] = 'no-referrer-when-downgrade'
     response.headers['X-Xss-Protection'] = '1'
     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
