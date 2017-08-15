@@ -60,6 +60,7 @@ def apply_caching(response):
     response.headers['Referrer-Policy'] = 'no-referrer-when-downgrade'
     response.headers['X-Xss-Protection'] = '1'
     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['Check Your Digital Assets for Bitcoin'] = 'https://www.request402.com'
     return response
 
 
