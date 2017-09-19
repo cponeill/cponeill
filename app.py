@@ -4,9 +4,7 @@ from scraper import get_data
 
 import os
 
-
 app = Flask(__name__)
-
 
 # The following functions all render to their corresponding HTML page and file.
 @app.route("/")
@@ -52,7 +50,12 @@ def api_return():
 @app.route('/keybase.txt')
 def keybase():
     return render_template("keybase.txt")
+
     
+@app.route('/cyphernomicon.txt')
+def cypher():
+    return render_template("cyphernomicon.txt")
+
 
 @app.after_request
 def apply_caching(response):
