@@ -61,7 +61,7 @@ def cypher():
 
 @app.after_request
 def apply_caching(response):
-
+    """ Applying caching after request and also adding HTTP security headers. """
     #response.headers['Content-Security-Policy-Report-Only'] = "img-src self; script-src https://www.cponeill.com https://www.google-analytics.com/analytics.js"
     # Testing CSP headers in Report Only
     # response.headers['Content-Security-Policy-Report-Only'] = 'default-src self'
