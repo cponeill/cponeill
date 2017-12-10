@@ -49,6 +49,7 @@ def api_return():
 
 @app.route('/keybase.txt')
 def keybase():
+    """ This text file uses PGP as proof I am the admin of my own site. """
     return render_template("keybase.txt")
 
     
