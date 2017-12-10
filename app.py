@@ -55,11 +55,13 @@ def keybase():
     
 @app.route('/cyphernomicon.txt')
 def cypher():
+    """ Need to figure out how to pretty print this text file. """
     return render_template("cyphernomicon.txt")
 
 
 @app.after_request
 def apply_caching(response):
+
     #response.headers['Content-Security-Policy-Report-Only'] = "img-src self; script-src https://www.cponeill.com https://www.google-analytics.com/analytics.js"
     # Testing CSP headers in Report Only
     # response.headers['Content-Security-Policy-Report-Only'] = 'default-src self'
