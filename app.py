@@ -49,16 +49,19 @@ def api_return():
 
 @app.route('/keybase.txt')
 def keybase():
+    """ This text file uses PGP as proof I am the admin of my own site. """
     return render_template("keybase.txt")
 
     
 @app.route('/cyphernomicon.txt')
 def cypher():
+    """ Need to figure out how to pretty print this text file. """
     return render_template("cyphernomicon.txt")
 
 
 @app.after_request
 def apply_caching(response):
+    """ Applying caching after request and also adding HTTP security headers. """
     #response.headers['Content-Security-Policy-Report-Only'] = "img-src self; script-src https://www.cponeill.com https://www.google-analytics.com/analytics.js"
     # Testing CSP headers in Report Only
     # response.headers['Content-Security-Policy-Report-Only'] = 'default-src self'
