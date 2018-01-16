@@ -51,12 +51,6 @@ def api_return():
 def keybase():
     """ This text file uses PGP as proof I am the admin of my own site. """
     return render_template("keybase.txt")
-
-@app.route('/proof')
-def writing_proofs():
-    """ This is the page that will display pgp proof of essays. """
-    return render_template("/proof/https.txt")
-
     
 @app.route('/cyphernomicon.txt')
 def cypher():
